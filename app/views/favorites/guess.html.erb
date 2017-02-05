@@ -1,5 +1,6 @@
-<form method="GET" action="<%= root_url %>">
-  <label for="github_username">Github username</label>
-  <input name="github_username" id="github_username" type="text" />
-  <input type="submit" value="Submit" />
-</form>
+<%= form_tag(favorite_language_path, method: :post, name: 'guess') do %>
+  <%= label_tag 'github_username' %>
+  <%= text_field_tag 'github_username' %>
+  <%= submit_tag 'Submit' %>
+<% end %>
+
