@@ -29,5 +29,6 @@ spec/guess_spec.rb
 Implement the following design in HTML and CSS
 
 We expect you to demonstrate your skills in producing a clean, responsive design and that you will return a submission within one week. Your submission is used to support the full recruitment process so take as long as you need to showcase your best skill.
+![Unboxed HTML test example](https://github.com/Leo-ajc/unboxed_technical_exam/blob/master/app/assets/images/unboxed_html_test_example.png)
 
 Available: [https://unboxed-technical-exam-leo.herokuapp.com/html_test](https://unboxed-technical-exam-leo.herokuapp.com/html_test)
