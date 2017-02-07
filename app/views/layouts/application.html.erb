@@ -8,7 +8,11 @@
 </head>
 <body>
 
-<%= yield %>
+  <% flash.each do |msg_type, message| %>
+    <%= content_tag(:div, message, class: msg_type) %>
+  <% end %>
+
+  <%= yield %>
 
 </body>
 </html>
