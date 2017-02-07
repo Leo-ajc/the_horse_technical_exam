@@ -22,3 +22,12 @@ app/controllers/favorites_controller.rb
 features/guess_favorite_language.feature
 
 spec/guess_spec.rb
+
+---
+# HTML/CSS test
+
+Implement the following design in HTML and CSS
+
+We expect you to demonstrate your skills in producing a clean, responsive design and that you will return a submission within one week. Your submission is used to support the full recruitment process so take as long as you need to showcase your best skill.
+
+Available: [https://unboxed-technical-exam-leo.herokuapp.com/html_test](https://unboxed-technical-exam-leo.herokuapp.com/html_test)

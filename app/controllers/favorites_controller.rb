@@ -17,6 +17,10 @@ class FavoritesController < ApplicationController
     redirect_to guess_path, alert: e.message
   end
 
+  def unboxed_html_test
+    render :layout => false
+  end
+
   private
 
   def guess_params
