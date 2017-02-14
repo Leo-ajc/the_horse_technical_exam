@@ -1,10 +1,11 @@
 Given "I am on the Github favorite language guess page" do
   visit root_url
 end
-
-When "I enter an arbitary Github username" do
-  fill_in :github_username, with: 'leo-ajc'
-  click_on 'Submit'
+VCR.use_cassette('login to shopify') do
+  When "I enter an arbitary Github username" do
+    fill_in :github_username, with: 'leo-ajc'
+    click_on 'Submit'
+  end
 end
 
 Then "I should see the username's favorite language" do
