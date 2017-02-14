@@ -18,7 +18,7 @@ class FavoritesController < ApplicationController
   end
 
   def unboxed_html_test
-    render :layout => false
+    #render :layout => false
   end
 
   private

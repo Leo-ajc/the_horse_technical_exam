@@ -34,6 +34,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 gem "octokit", "~> 4.0"
+gem 'bootstrap-sass', '~> 3.3.6'
 
 group :test do
   gem 'cucumber-rails', :require => false

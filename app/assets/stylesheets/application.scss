@@ -10,12 +10,28 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
  */
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+.panel-unboxed {
+  @extend .panel-body;
+  padding:12px;
+}
+img.unboxed-avatar-thumb {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+small.days-ago {
+  color:#8899a6;
+}
 
 .alert {
   color: red;
   border: solid red 1px;
   margin-bottom: 20px;
 }
+
