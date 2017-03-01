@@ -5,6 +5,7 @@
 # files.
 
 require 'cucumber/rails'
+require 'test/unit'
 require 'vcr'
 
 # Capybara defaults to CSS3 selectors rather than XPath.
@@ -57,15 +58,7 @@ end
 # See https://github.com/cucumber/cucumber-rails/blob/master/features/choose_javascript_database_strategy.feature
 Cucumber::Rails::Database.javascript_strategy = :truncation
 
-
-VCR.configure do |c|
-  c.cassette_library_dir = 'features/fixtures/vcr_cassettes'
-  #c.cassette_library_dir = Rails.root.join('test', 'fixtures', 'vcr_cassettes')
-  c.hook_into :webmock
+VCR.configure do |config|
+  config.cassette_library_dir = "features/fixtures/vcr_cassettes"
+  config.hook_into :webmock # or :fakeweb
 end
-#VCR.config do |c|
-#  c.cassette_library_dir = 'features/fixtures/vcr_cassettes'
-#  c.stub_with :webmock
-#  c.ignore_localhost = true
-#end
-

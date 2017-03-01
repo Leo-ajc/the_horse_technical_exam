@@ -10,7 +10,6 @@ describe GuessFavoriteLanguage do
         favorite_language = GuessFavoriteLanguage.github_username('leo-ajc')
         expect(favorite_language).to eq('Ruby')
       end
-      # Could add a http mocking gem like VCR here to speed up the tests.
     end
 
     context 'Testing exception conditions' do
@@ -26,16 +25,12 @@ describe GuessFavoriteLanguage do
         )
       end
 
-      subject do
-        GuessFavoriteLanguage.github_username('leo-ajc')
-      end
-
       it 'raise an exception when the Github user is not found' do
         allow(Octokit).to receive(:user).and_raise(
           Octokit::NotFound
         )
         expect {
-          subject
+          GuessFavoriteLanguage.github_username('leo-ajc')
         }.to raise_error(
           GuessFavoriteLanguage::Error::GithubUserNotFound
         )

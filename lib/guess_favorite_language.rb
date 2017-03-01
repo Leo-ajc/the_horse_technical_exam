@@ -20,6 +20,7 @@ class GuessFavoriteLanguage
     def query_octokit(username)
       user = Octokit.user username
       repos = user.rels[:repos].get.data
+      repos = filter_forked_repos(repos)
       languages = repos.map{|x| x.language }.compact
       frequency = languages.each_with_object(Hash.new(0)) do |word,counts|
         counts[word] += 1
@@ -28,6 +29,11 @@ class GuessFavoriteLanguage
       user_favorite_language = frequency.first.first
       user_favorite_language
     end
+
+    def filter_forked_repos(repos)
+      repos.select {|x|!x.fork}
+    end
+
   end
 
   module Error
