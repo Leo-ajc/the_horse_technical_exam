@@ -12,6 +12,13 @@ class GuessFavoriteLanguage
     rescue Octokit::Error
       raise self::Error::GithubApiFault
     rescue StandardError
+      # I normally don't write code that fails. However
+      # this is just technical test. I need to insultate
+      # the Rails app.
+      #
+      # This code is very tied to Octokit. I should
+      # probably have forked Octkit and add my
+      # fork the Gemfile.
       raise self::Error::Indeterminate
     end
 
@@ -21,13 +28,18 @@ class GuessFavoriteLanguage
       user = Octokit.user username
       repos = user.rels[:repos].get.data
       repos = filter_forked_repos(repos)
-      languages = repos.map{|x| x.language }.compact
-      frequency = languages.each_with_object(Hash.new(0)) do |word,counts|
-        counts[word] += 1
-      end
+      languages = repos.map{|x| x.language }.compact # removes nils
+      languages = languages.reject { |c| c.empty? } # removes empty strings
+      frequency = group_by_and_count(languages)
       frequency = frequency.sort_by {|_key, value| value }.reverse
       user_favorite_language = frequency.first.first
       user_favorite_language
+    end
+
+    def group_by_and_count(languages)
+      languages.each_with_object(Hash.new(0)) do |word,counts|
+        counts[word] += 1
+      end
     end
 
     def filter_forked_repos(repos)

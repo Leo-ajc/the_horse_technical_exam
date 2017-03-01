@@ -1,0 +1,156 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/users/leo-ajc
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Octokit Ruby Gem 4.6.2
+      Content-Type:
+      - application/json
+      Authorization:
+      - token 1859b1bf78fdaad704f32157d3cafd445876d77c
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 01 Mar 2017 14:24:26 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4999'
+      X-Ratelimit-Reset:
+      - '1488381866'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding
+      Etag:
+      - W/"683bccaa9f101394d5f39062f079a409"
+      Last-Modified:
+      - Tue, 14 Feb 2017 14:08:54 GMT
+      X-Oauth-Scopes:
+      - ''
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Served-By:
+      - e183f7c661b1bbc2c987b3c4dc7b04e0
+      X-Github-Request-Id:
+      - 405B:4AE2:145C7AE:195DD79:58B6D999
+    body:
+      encoding: ASCII-8BIT
+      string: '{"login":"Leo-ajc","id":594096,"avatar_url":"https://avatars1.githubusercontent.com/u/594096?v=3","gravatar_id":"","url":"https://api.github.com/users/Leo-ajc","html_url":"https://github.com/Leo-ajc","followers_url":"https://api.github.com/users/Leo-ajc/followers","following_url":"https://api.github.com/users/Leo-ajc/following{/other_user}","gists_url":"https://api.github.com/users/Leo-ajc/gists{/gist_id}","starred_url":"https://api.github.com/users/Leo-ajc/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Leo-ajc/subscriptions","organizations_url":"https://api.github.com/users/Leo-ajc/orgs","repos_url":"https://api.github.com/users/Leo-ajc/repos","events_url":"https://api.github.com/users/Leo-ajc/events{/privacy}","received_events_url":"https://api.github.com/users/Leo-ajc/received_events","type":"User","site_admin":false,"name":"Leo
+        Campbell","company":null,"blog":"http://leocampbell.net/","location":null,"email":null,"hireable":null,"bio":null,"public_repos":11,"public_gists":0,"followers":10,"following":2,"created_at":"2011-02-01T05:01:39Z","updated_at":"2017-02-14T14:08:54Z"}'
+    http_version: 
+  recorded_at: Wed, 01 Mar 2017 14:24:26 GMT
+- request:
+    method: get
+    uri: https://api.github.com/users/Leo-ajc/repos
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Octokit Ruby Gem 4.6.2
+      Content-Type:
+      - application/json
+      Authorization:
+      - token 1859b1bf78fdaad704f32157d3cafd445876d77c
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 01 Mar 2017 14:24:28 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4998'
+      X-Ratelimit-Reset:
+      - '1488381866'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding
+      Etag:
+      - W/"b44527063f65eedb2002745a6da42acd"
+      X-Oauth-Scopes:
+      - ''
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Served-By:
+      - 139317cebd6caf9cd03889139437f00b
+      X-Github-Request-Id:
+      - 405C:4ADF:D0B77A:10294DF:58B6D99B
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"language":"Ruby","fork":false},{"language":"Clojure", "fork":true},{"language":"Clojure", "fork":true}]'
+    http_version: 
+  recorded_at: Wed, 01 Mar 2017 14:24:28 GMT
+recorded_with: VCR 3.0.3
