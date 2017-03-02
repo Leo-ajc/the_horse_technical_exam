@@ -39,7 +39,7 @@ describe GuessFavoriteLanguage do
     end
 
     it "ignores repos with nil value for language" do
-      VCR.use_cassette "ignores repos with nil value for language" do
+      VCR.use_cassette "ignores repos with nil value for language", record: :none do
         # This is a readonly cassette, a webmock
         # [
         #   {"language":"Ruby","fork":false},

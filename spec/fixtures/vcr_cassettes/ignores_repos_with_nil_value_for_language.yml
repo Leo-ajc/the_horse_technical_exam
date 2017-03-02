@@ -150,7 +150,7 @@ http_interactions:
       - 679E:5BF0:1343311:18C4FD6:58B6E8D3
     body:
       encoding: ASCII-8BIT
-      string: '[{"language":"Ruby","fork":false},{"language":nil, "fork":false},{"language":nil, "fork":false}]'
+      string: '[{"language":"Ruby","fork":false},{"language":null, "fork":false},{"language":null, "fork":false}]'
     http_version: 
   recorded_at: Wed, 01 Mar 2017 15:29:23 GMT
 recorded_with: VCR 3.0.3
