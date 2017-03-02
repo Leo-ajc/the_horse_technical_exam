@@ -15,23 +15,35 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.html-test-body {
+  background-color: #fbfbfb;
+  padding-top: 15px;
 
-.panel-unboxed {
-  @extend .panel-body;
-  padding:12px;
-}
-img.unboxed-avatar-thumb {
-  width: 60px;
-  height: 60px;
-  margin-right: 10px;
-}
-small.days-ago {
-  color:#8899a6;
-}
+  section {
+    max-width: 720px;
 
-.alert {
-  color: red;
-  border: solid red 1px;
-  margin-bottom: 20px;
-}
+    article {
+      @extend .panel-body;
+      @extend .panel;
+      padding:12px;
+      border-radius: 0px;
+      border-style: groove;
+      border-width: 1px;
+      border-color: rgba(255, 255, 255, 0.28);
+      background: linear-gradient(#fff, #f7f7f7);
+    }
 
+    img {
+      @extend .pull-left;
+      @extend .img-rounded;
+      width: 60px;
+      height: 60px;
+      margin-right: 10px;
+    }
+
+    time {
+      @extend .pull-right;
+      color:#bcbab8;
+    }
+  }
+}

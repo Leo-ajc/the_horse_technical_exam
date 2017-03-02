@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   get '/guess', to: 'favorites#guess', as: 'guess'
   post '/favorite_language', to: 'favorites#favorite_language', as: 'favorite_language'
 
-  get 'html_test', to: 'favorites#unboxed_html_test'
+  get 'html_test', to: 'html_test#html_test'
 end

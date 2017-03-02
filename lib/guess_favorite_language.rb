@@ -32,6 +32,8 @@ class GuessFavoriteLanguage
       languages = languages.reject { |c| c.empty? } # removes empty strings
       frequency = group_by_and_count(languages)
       frequency = frequency.sort_by {|_key, value| value }.reverse
+      # When two languages have the same number of repos
+      # just choose one of them.
       user_favorite_language = frequency.first.first
       user_favorite_language
     end
