@@ -1,4 +1,4 @@
-# Unboxed Technical Test
+# Horse Technical Test
 
 We would like you to build a simple web or command line application, which should allow users to enter an arbitrary GitHub username, and be presented with a best guess of the GitHub user's favourite programming language.
 
@@ -9,7 +9,7 @@ There is no recommended timeframe for you to complete this exercise in, do what 
 
 ---
 
-Deployed at: [https://unboxed-technical-exam-leo.herokuapp.com/](https://unboxed-technical-exam-leo.herokuapp.com/)
+Deployed at: [https://the-horse-technical-exam-leo.herokuapp.com/](https://the-horse-technical-exam-leo.herokuapp.com/)
 
 # The Gist
 
@@ -28,8 +28,8 @@ spec/guess_spec.rb
 
 Implement the following design in HTML and CSS
 
-![Unboxed HTML test example](https://github.com/Leo-ajc/unboxed_technical_exam/blob/master/app/assets/images/unboxed_html_test_example.png)
+![The horse HTML test example](https://github.com/Leo-ajc/the_horse_technical_exam/blob/master/app/assets/images/the_horse_html_test_example.png)
 
 We expect you to demonstrate your skills in producing a clean, responsive design and that you will return a submission within one week. Your submission is used to support the full recruitment process so take as long as you need to showcase your best skill.
 
-Available: [https://unboxed-technical-exam-leo.herokuapp.com/html_test](https://unboxed-technical-exam-leo.herokuapp.com/html_test)
+Available: [https://the-horse-technical-exam-leo.herokuapp.com/html_test](https://the-horse-technical-exam-leo.herokuapp.com/html_test)
